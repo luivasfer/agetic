@@ -43,27 +43,29 @@
 						</div>
 						<h5>CAMPAÑAS</h5>
 					</a>
-					<!-- 
-					<a href="" class="o5">
-						<div class="btTransparencia"></div>
-						<h5>TRANSPARECIA</h5>
-					</a>
-					-->
 				</section>
 			</div>
 		</div>
 	</div>
 
+	<div id="botonResponsive">
+		<div class="linea"></div>
+		<div class="linea"></div>
+		<div class="linea"></div>
+	</div>
+
 	<footer>
 		<div class="linea">
 			<div class="banderaBolivia"></div>
-			Estado Plurinacional de Bolivia - Ministerio de la Presidencia
+			<span id="ministerio">Estado Plurinacional de Bolivia - Ministerio de la Presidencia</span>
+			<div id="ministerio_e">Estado Plurinacional de Bolivia <br> Ministerio de la Presidencia <br></div>
 			<div class="redSocial">
-				<div class="facebook"></div>
-				<div class="twitter"></div>
+				<a href="#"><div class="facebook hvr-float"></div></a>
+				<a href="#"><div class="twitter hvr-float"></div></a>
+				<a href="#"><div class="youtube hvr-float"></div></a>
+				<a href="#"><div class="instagram hvr-float"></div></a>
 			</div>
 		</div>
-
 	</footer>
 	
 	<script type="text/javascript" src="js/jquery.js"></script>

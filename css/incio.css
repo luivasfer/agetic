@@ -7,7 +7,6 @@
 {
 	color:#300024;
 }
-
 /**/
 
 
@@ -16,13 +15,11 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: rgba(90, 9, 84, 0.65);
 	background: url('../img/fondo_pagina.jpg') no-repeat  center center fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
 	font-family: 'OpenSans';
 }
-
 .borde
 {
 	border: 1px silver solid;
@@ -30,7 +27,7 @@ body
 
 #fondoColor
 {
-	background-color: rgba(90, 9, 84, 0.65);
+	background-color: rgba(90, 9, 84, 0.60);
 	height: 100vh;
 	position: absolute;
 	text-align: center;
@@ -58,7 +55,8 @@ body
 }
 #cajaMenuPrincipal .menuPrincipal a
 {
-	color: #300024;
+	color: rgba(255,255,255,.5);
+	transition: 1s ease;
 }
 
 #cajaMenuPrincipal .menuPrincipal h5
@@ -119,6 +117,12 @@ body
 	transition: .1s;
 }
 
+
+#logoPrincipal img
+{
+	width: 360px;
+	transition: .5s;
+}
 footer 
 {
 	bottom: 0;
@@ -160,6 +164,7 @@ footer .linea .redSocial
 	right: 0px;
 	bottom: 8px;
 	display: flex;
+	transition: .5s ease;
 }
 footer .linea .redSocial .facebook
 {
@@ -173,6 +178,11 @@ footer .linea .redSocial .facebook
 	border-radius: 50%;
 	margin: 0 0 0 25px;
 }
+footer .linea .redSocial .facebook:hover
+{
+	background-color: #3b579d;
+	background-image: url(../img/svg/facebook.svg); 
+}
 footer .linea .redSocial .twitter
 {
 	width: 35px;
@@ -185,29 +195,280 @@ footer .linea .redSocial .twitter
 	border-radius: 50%;
 	margin: 0 0 0 25px;
 }
+footer .linea .redSocial .twitter:hover
+{
+	background-color: #00B6F1;
+	background-image: url(../img/svg/twitter.svg); 
+}
 
+footer .linea .redSocial .youtube
+{
+	width: 35px;
+	height: 35px;
+	background-color: #300024;
+	background-image: url(../img/svg/youtube.svg);
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+	border-radius: 50%;
+	margin: 0 0 0 25px;
+}
+footer .linea .redSocial .youtube:hover
+{
+	background-color: #C4292B;
+	background-image: url(../img/svg/youtube.svg);
+}
+footer .linea .redSocial .instagram
+{
+	width: 35px;
+	height: 35px;
+	background-color: #300024;
+	background-image: url(../img/svg/instagram.svg);
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+	border-radius: 50%;
+	margin: 0 0 0 25px;
+}
+footer .linea .redSocial .instagram:hover
+{
+	background-color: #5C4A40;
+	background-image: url(../img/svg/instagram.svg);
+}
+footer .linea #ministerio_e
+{
+	display: none;
+}
 
-
+#botonResponsive
+{
+	display: none;
+}
 /**------------------ RESPONSIVE----------------- **/
 /*-------------------------------------------------*/
+/*TABLET*/
 
 @media (max-width: 899px) 
 {
+	
+	#logoPrincipal
+	{
+		top: 25%;	
+	}
+	#logoPrincipal img
+	{
+		width: 300px;
+		transition: .5s ease;
+	}
+	#cajaMenuPrincipal .menuPrincipal
+	{
+		display: -webkit-flex;
+	   	display: flex;
+	   	flex-wrap: wrap;
+	    /*
+	    -webkit-flex-direction: row;
+	   	flex-direction: row;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    */
+	}
+	.o1 , .o2 , .o3 , .o4 , .o5
+	{
+		text-align: center;
+		-webkit-flex: 1;
+	   	flex: 1;
+	   	width: 50% !important;
+	}
+	footer .linea .redSocial .facebook
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/facebook.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+	footer .linea .redSocial .twitter
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/twitter.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+	footer .linea .redSocial .youtube
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/youtube.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+	footer .linea .redSocial .instagram
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/instagram.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+}
+
+/**------------------ RESPONSIVE----------------- **/
+/*-------------------------------------------------*/
+/*Movil*/
+
+@media (max-width: 599px) 
+{
+	#botonResponsive{
+		display: block;
+		left: 50%;
+		top: 45%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: white;
+		padding-top:13px;
+	}
+	#botonResponsive .linea{
+		width: 50%;
+		height: 2px;
+		background-color: #300024;
+		margin: 5px auto 5px auto;
+		border-radius: 2px;
+	}
+	#logoPrincipal
+	{
+		top: 20%;	
+	}
+	#logoPrincipal img
+	{
+		width: 250px;
+		transition: .5s ease;
+	}
+
 	#cajaMenuPrincipal{
 		display: none;
 	}
-	#logoPrincipal
+	footer 
 	{
-		top: 35%;
-		width: 360px;
-		he
+		bottom: 0;
+		color: #FFF;
+		margin: 0 0 13px 0;
+		position: absolute;
+		width: 100%;
 	}
-}
-@media (max-width: 599px) 
-{
-	#logoPrincipal
+	footer .linea
 	{
-		top: 35%;
-		width: 300px;
+		border-bottom: 1px solid #300024;
+		margin: 0 auto;
+		padding:  0 0 5px 0;
+		position: relative;
+		width: 96%;
+		text-align: center;
+		flex-wrap: wrap;
 	}
+	footer .linea #ministerio{
+		display: none;
+	}
+	footer .linea #ministerio_e{
+		text-align: center;
+		display: inline;
+		width: 100%;
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+	footer .linea .banderaBolivia
+	{
+		background: rgba(255,0,0,1);
+		background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+		background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+		background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(33%, rgba(255,0,0,1)), color-stop(33%, rgba(229,245,12,1)), color-stop(66%, rgba(255,234,0,1)), color-stop(66%, rgba(37,156,65,1)), color-stop(100%, rgba(37,156,65,1)));
+		background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+		background: linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#259c41', GradientType=0 );
+		height: 15px;
+		margin: 10px auto;
+		width: 20px;
+		display: inline;
+		transition: .5s ease;
+	}
+	footer .linea .redSocial
+	{
+		bottom: 90px;
+		display: flex;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		transition: .5s ease;
+		justify-content: center;
+	}
+	footer .linea .redSocial .facebook
+	{
+		background-color: #300024;
+		background-image: url(../img/svg/facebook.svg); 
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 45%;
+		border-radius: 50%;
+		height: 35px;
+		margin: 0 8px;
+		width: 35px;
+	}
+	footer .linea .redSocial .twitter
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/twitter.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+	footer .linea .redSocial .youtube
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/youtube.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+	footer .linea .redSocial .instagram
+	{
+		width: 35px;
+		height: 35px;
+		background-color: #300024;
+		background-image: url(../img/svg/instagram.svg); 
+		background-repeat: no-repeat;
+		background-size: 45%;
+		background-position: center;
+		border-radius: 50%;
+		margin: 0 8px;
+	}
+
 }
