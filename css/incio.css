@@ -1,0 +1,213 @@
+/*FUENTES*/
+@import url(fonts.css);
+/**/
+
+/*colores*/
+.morado
+{
+	color:#300024;
+}
+
+/**/
+
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(90, 9, 84, 0.65);
+	background: url('../img/fondo_pagina.jpg') no-repeat  center center fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
+	font-family: 'OpenSans';
+}
+
+.borde
+{
+	border: 1px silver solid;
+}
+
+#fondoColor
+{
+	background-color: rgba(90, 9, 84, 0.65);
+	height: 100vh;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+#logoPrincipal
+{
+	position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 360px;
+    transition: .5s ease;
+}
+
+#cajaMenuPrincipal .menuPrincipal
+{
+	display: -webkit-flex;
+   	display: flex;
+    -webkit-flex-direction: row;
+   	flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+#cajaMenuPrincipal .menuPrincipal a
+{
+	color: #300024;
+}
+
+#cajaMenuPrincipal .menuPrincipal h5
+{
+	font-size: 16px;
+	color: white;
+	line-height: 24px;
+}
+
+.container
+{
+	height: 100vh;
+	position: relative;
+}
+#cajaMenuPrincipal
+{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    width: 100%;
+}
+.o1 , .o2 , .o3 , .o4 , .o5
+{
+	text-align: center;
+	-webkit-flex: 1;
+   	flex: 1;
+}
+.menuPrincipal a:hover div
+{
+	border:1px solid white;
+	transition: 1s ease;
+}
+.menuPrincipal .opciones
+{
+	width: 100px;
+   	/*background-image: url('../img/svg/nosotros.svg');
+   	background-position: center;
+   	background-repeat: no-repeat; 
+   	background-size: 45%;*/
+   	border-radius: 50%;
+   	height: 100px;
+   	margin: 0 auto; 
+   	position: relative;
+   	transition: .5s;
+}
+.menuPrincipal .opciones img
+{
+	margin-top: 25%;
+	width: 48px;
+	transition: .5s;
+}
+.menuPrincipal a:hover .opciones img
+{
+	margin-top: 22%;
+	width: 53px;
+	transition: .1s;
+}
+
+footer 
+{
+	bottom: 0;
+	color: #FFF;
+	margin: 0 0 13px 0;
+	position: absolute;
+	width: 100%;
+}
+footer .linea
+{
+	align-content: flex-end;
+	align-items: center;
+	border-bottom: 1px solid #300024;
+	display: flex;
+	margin: 0 auto;
+	padding:  0 0 5px 0;
+	position: relative;
+	width: 96%;
+}
+
+footer .linea .banderaBolivia
+{
+	background: rgba(255,0,0,1);
+	background: -moz-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,0,0,1)), color-stop(33%, rgba(255,0,0,1)), color-stop(33%, rgba(229,245,12,1)), color-stop(66%, rgba(255,234,0,1)), color-stop(66%, rgba(37,156,65,1)), color-stop(100%, rgba(37,156,65,1)));
+	background: -webkit-linear-gradient(top, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,0,0,1) 0%, rgba(255,0,0,1) 33%, rgba(229,245,12,1) 33%, rgba(255,234,0,1) 66%, rgba(37,156,65,1) 66%, rgba(37,156,65,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#259c41', GradientType=0 );
+	float: left;
+	height: 15px;
+	margin: 0 10px 0 0;
+	width: 20px;
+}
+footer .linea .redSocial
+{
+	position: absolute;
+	right: 0px;
+	bottom: 8px;
+	display: flex;
+}
+footer .linea .redSocial .facebook
+{
+	width: 35px;
+	height: 35px;
+	background-color: #300024;
+	background-image: url(../img/svg/facebook.svg); 
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+	border-radius: 50%;
+	margin: 0 0 0 25px;
+}
+footer .linea .redSocial .twitter
+{
+	width: 35px;
+	height: 35px;
+	background-color: #300024;
+	background-image: url(../img/svg/twitter.svg); 
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+	border-radius: 50%;
+	margin: 0 0 0 25px;
+}
+
+
+
+/**------------------ RESPONSIVE----------------- **/
+/*-------------------------------------------------*/
+
+@media (max-width: 899px) 
+{
+	#cajaMenuPrincipal{
+		display: none;
+	}
+	#logoPrincipal
+	{
+		top: 35%;
+		width: 360px;
+		he
+	}
+}
+@media (max-width: 599px) 
+{
+	#logoPrincipal
+	{
+		top: 35%;
+		width: 300px;
+	}
+}
